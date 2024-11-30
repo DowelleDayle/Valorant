@@ -1,0 +1,32 @@
+.SkillsIcon{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    border-bottom: solid 1px #fff;
+    padding:.5rem;
+
+
+}
+.SkillsIcon img{
+    width:15%;
+    cursor: pointer;
+    transition: all 350ms;
+}
+
+.SkillsIcon img:hover{
+    scale:1.05;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .Extra{
+        display:none;
+    }
+    .SkillsIcon{
+        background-color: goldw;
+        justify-content: space-around;
+    }
+}
+@media (max-width:431px) {
+    .Extra{
+        display: none;
+    }
+}

@@ -1,0 +1,170 @@
+.Lore_container,
+.Lore_container2 {
+    gap: .5rem;
+    filter: blur(10px);
+    animation: 1.5s forwards Appear-left;
+}
+
+.AgentDetails {
+    position: relative;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    overflow: hidden;
+}
+
+.AgentDetails::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../assets/maps/Pearl.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+.AgentDetails_body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem 2rem;
+    height: 90vh;
+    min-height: 90vh;
+}
+
+.Left_part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    height: 100%;
+}
+
+.Lore_container,
+.Right_part {
+    flex-direction: column;
+    display: flex;
+}
+
+.Right_part {
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 30%;
+    height: 100%;
+}
+
+@keyframes Appear-left {
+    to {
+        transform: translate(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.Next,
+.Prev {
+    width: 2rem;
+}
+
+.Prev {
+    transform: rotate(180deg);
+}
+
+.Lore_container {
+    transform: translateX(10rem);
+}
+
+.Lore_container2 {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-10rem);
+}
+
+.Lore_container span {
+    font-size: 125%;
+    text-align: right;
+    font-weight: 300;
+    opacity: .85;
+    line-height: 150%;
+}
+
+.Skill_text {
+    height: 150%;
+}
+
+.Right_container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.Right_container .Next {
+    width: 2rem;
+    height: 2rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .AgentDetails_body {
+        flex-direction: column;
+        justify-content: space-around;
+        height: auto;
+        padding: .5rem;
+        gap: 3rem;
+    }
+
+    .Left_part {
+        order: 3;
+        width: 100%;
+    }
+
+    .Right_part {
+        width: 100%;
+        order: 2;
+    }
+
+    .Prev,
+    .Right_container {
+        display: none;
+    }
+
+    .Lore_container {
+        padding: 1rem 1rem .25rem;
+    }
+
+    .Lore_container span {
+        font-size: 200%;
+        text-align: justify;
+    }
+}
+
+@media(max-width: 431px) {
+    .AgentDetails_body {
+        flex-direction: column;
+        height: auto;
+        padding: .5rem;
+        gap: 1rem;
+    }
+
+    .Left_part {
+        order: 3;
+        width: 100%;
+    }
+
+    .Right_part {
+        width: 100%;
+        order: 2;
+    }
+
+    .Prev,
+    .Right_container {
+        display: none;
+    }
+
+    .Lore_container span {
+        text-align: center;
+    }
+}
