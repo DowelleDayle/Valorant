@@ -69,6 +69,12 @@ import HarborCove from '../assets/agents/Harbor/HarborCove.webp';
 import HarborHigh from '../assets/agents/Harbor/HarborHigh.webp';
 import HarborReckoning from '../assets/agents/Harbor/HarborReckoning.webp';
 
+import IsoMain from '../assets/agents/Iso/IsoMain.webp';
+import IsoUndercut from '../assets/agents/Iso/IsoUndercut.webp';
+import IsoDoubletap from '../assets/agents/Iso/IsoDoubletap.webp';
+import IsoContingency from '../assets/agents/Iso/IsoContingency.webp';
+import IsoKillcontract from '../assets/agents/Iso/IsoKillcontract.webp';
+
 
 const agentsData = {
 
@@ -441,6 +447,43 @@ const agentsData = {
             ViperIcon,
         ],
         mainImage: HarborMain
+    },
+
+    Iso: {
+        Agent_name: "ISOO",
+        role: "Duelist",
+        role_icon: Duelist,
+        lore: "Chinese fixer for hire Iso goes into a flow state to dismantle the opposition. Reconfiguring ambient energy into bulletproof protection, he advances with focus towards his next duel to the death.",
+        skills: [
+            {
+                name: "Undercut",
+                description: "Throws a projectile that reduces the movement speed of enemies caught within its radius, making them vulnerable to follow-up attacks.",
+                image: IsoUndercut
+            },
+            {
+                name: "Double Tap",
+                description: "Fires two precise shots that deal significant damage, perfect for quickly taking down enemies in close-range duels.",
+                image: IsoDoubletap
+            },
+            {
+                name: "Kill Switch",
+                description: "Deploys a throwable device that blinds opponents, disorienting them and setting up Iso for decisive eliminations.",
+                image: IsoContingency
+            },
+            {
+                name: "Final Showdown",
+                description: "Engages Iso in a one-on-one duel with an enemy of his choice, removing external factors and putting his skills to the test.",
+                image: IsoKillcontract
+            }
+        ],
+        suggested: [
+            AstraIcon,
+            CloveIcon,
+            HarborIcon,
+            OmenIcon,
+            ViperIcon,
+        ],
+        mainImage: IsoMain
     },
            
     

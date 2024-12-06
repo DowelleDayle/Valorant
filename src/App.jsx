@@ -12,6 +12,7 @@ import Fade from './pages/AgentDetails/Fade'
 import Deadlock from "./pages/AgentDetails/Deadlock"
 import Gekko from "./pages/AgentDetails/Gekko"
 import Harbor from "./pages/AgentDetails/Harbor"
+import Iso from "./pages/AgentDetails/Iso"
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
           <Route path="/Agents/Fade" element={<Fade />} />
           <Route path="/Agents/Gekko" element={<Gekko />} />
           <Route path="/Agents/Harbor" element={<Harbor />} />
+          <Route path="/Agents/Iso" element={<Iso />} />
         </Routes>
       </Router>
       <Footer/>

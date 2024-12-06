@@ -40,7 +40,7 @@ const Fade = () => {
                 <div className={styles.Right_part}>
                     <div></div>
                     <div className={styles.Right_container}>
-                    <Link to='/Agents/Brimstone'><img src={Next} alt="Next icon" className={styles.Next} /></Link>
+                    <Link to='/Agents/Gekko'><img src={Next} alt="Next icon" className={styles.Next} /></Link>
                         <Suggested 
                             Suggested1={agent.suggested[0]} 
                             Suggested2={agent.suggested[1]} 
