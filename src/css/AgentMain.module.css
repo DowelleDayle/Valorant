@@ -37,7 +37,7 @@
     font-size: 12.5em;
     font-weight: bolder;
     position: absolute;
-    opacity: .75;
+    opacity: .35;
     font-style: italic;
     transform: translateY(-2rem);
 }

@@ -494,7 +494,7 @@ const agentsData = {
 
     Jett: {
         Agent_name: "JETT",
-        role: "Duelist",
+        role: "DUELIST",
         role_icon: Duelist,
         lore: "Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.",
         skills: [
