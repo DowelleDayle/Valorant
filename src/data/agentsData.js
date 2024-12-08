@@ -75,6 +75,12 @@ import IsoDoubletap from '../assets/agents/Iso/IsoDoubletap.webp';
 import IsoContingency from '../assets/agents/Iso/IsoContingency.webp';
 import IsoKillcontract from '../assets/agents/Iso/IsoKillcontract.webp';
 
+import JettMain from '../assets/agents/Jett/JettMain.webp';
+import JettFirst from '../assets/agents/Jett/JettFirst.avif'
+import JettSecond from '../assets/agents/Jett/JettSecond.avif'
+import JettThird from '../assets/agents/Jett/JettThird.avif'
+import JettFourth from '../assets/agents/Jett/JettFourth.avif'
+
 
 const agentsData = {
 
@@ -484,6 +490,43 @@ const agentsData = {
             ViperIcon,
         ],
         mainImage: IsoMain
+    },
+
+    Jett: {
+        Agent_name: "JETT",
+        role: "Duelist",
+        role_icon: Duelist,
+        lore: "Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.",
+        skills: [
+            {
+                name: "Undercut",
+                description: "Instantly propel Jett high into the air.",
+                image: JettFirst
+            },
+            {
+                name: "Double Tap",
+                description: "Activate to prepare a gust of wind for a limited time. RE-USE the wind to propel Jett in the direction she is moving. If Jett is standing still, she propels forward. Tailwind charge resets every two kills.",
+                image: JettSecond
+            },
+            {
+                name: "Kill Switch",
+                description: "Instantly throw a projectile that expands into a brief vision-blocking cloud on impact with a surface. HOLD the ability key to curve the smoke in the direction of your crosshair.",
+                image: JettThird
+            },
+            {
+                name: "Final Showdown",
+                description: "Equip a set of highly accurate throwing knives. FIRE to throw a single knife and recharge knives on a kill. ALT FIRE to throw all remaining daggers but does not recharge on a kill.",
+                image: JettFourth
+            }
+        ],
+        suggested: [
+            AstraIcon,
+            CloveIcon,
+            HarborIcon,
+            OmenIcon,
+            ViperIcon,
+        ],
+        mainImage: JettMain
     },
            
     

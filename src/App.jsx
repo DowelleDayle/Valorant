@@ -13,6 +13,7 @@ import Deadlock from "./pages/AgentDetails/Deadlock"
 import Gekko from "./pages/AgentDetails/Gekko"
 import Harbor from "./pages/AgentDetails/Harbor"
 import Iso from "./pages/AgentDetails/Iso"
+import Jett from "./pages/AgentDetails/Jett"
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
           <Route path="/Agents/Gekko" element={<Gekko />} />
           <Route path="/Agents/Harbor" element={<Harbor />} />
           <Route path="/Agents/Iso" element={<Iso />} />
+          <Route path="/Agents/Jett" element={<Jett />} />
         </Routes>
       </Router>
       <Footer/>
